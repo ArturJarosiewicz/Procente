@@ -3,12 +3,6 @@
     <style name="textStyle">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
-
-    </style>
-
-    <style name="viewStyle">
-        <item name="layout_goneMarginStart">@dimen/standardMargin</item>
-        <item name="android:layout_marginEnd">@dimen/standardMargin</item>
     </style>
 
 </resources>
