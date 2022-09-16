@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Procente</string>
+    <string name="calculate">Oblicz</string>
+    <string name="result">wynik</string>
 </resources>
