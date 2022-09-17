@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/activityBackground"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,11 +15,12 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:background="@color/linearBackground"
+        android:padding="@dimen/standardMargin"
+        app:layout_constraintBottom_toTopOf="@+id/linear2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="@dimen/standardMargin">
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/Number1"
@@ -37,50 +39,50 @@
 
         <TextView
             android:id="@+id/textView2"
+            style="@style/textStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standardMargin"
             android:text="% z"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/textStyle"
-            android:layout_marginEnd="@dimen/standardMargin"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/Number2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standardMargin"
             android:layout_weight="1"
+            android:background="@color/white"
             android:ems="10"
             android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/resultbtn1"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/white"
-            android:layout_marginEnd="@dimen/standardMargin"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/calculateBtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="0dp"
-            android:minWidth="0dp"
             android:layout_weight="1"
-            android:text="@string/calculate"
-            android:backgroundTint="@color/btnColor"/>
+            android:backgroundTint="@color/btnColor"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/calculate" />
 
         <TextView
             android:id="@+id/resultTv1"
+            style="@style/textStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
-            style="@style/textStyle"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:text="TextView" />
 
     </LinearLayout>
 
@@ -92,8 +94,9 @@
         android:layout_marginEnd="8dp"
         android:background="@color/linearBackground"
         android:padding="@dimen/standardMargin"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linear1">
 
@@ -162,15 +165,15 @@
 
     <TextView
         android:id="@+id/textView5"
+        style="@style/textStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="O jaki procent wzrosła/zmalała dana liczba"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear2"
-        android:background="@color/linearBackground"
-        style="@style/textStyle"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"/>
+        android:background="@color/linearBackground"
+        android:text="O jaki procent wzrosła/zmalała dana liczba"
+        app:layout_constraintBottom_toTopOf="@+id/linear3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2" />
 
     <LinearLayout
         android:id="@+id/linear3"
@@ -180,17 +183,17 @@
         android:layout_marginEnd="8dp"
         android:background="@color/linearBackground"
         android:padding="@dimen/standardMargin"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <TextView
+            style="@style/textStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Z"
-            style="@style/textStyle"
-            />
+            android:text="Z" />
 
         <EditText
             android:id="@+id/Number5"
@@ -212,7 +215,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/standardMargin"
-            android:text="jest % z"
+            android:text="do"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -257,15 +260,15 @@
 
     <TextView
         android:id="@+id/textView7"
+        style="@style/textStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dodaj procent do liczby"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear3"
-        android:background="@color/linearBackground"
-        style="@style/textStyle"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"/>
+        android:background="@color/linearBackground"
+        android:text="Dodaj procent do liczby"
+        app:layout_constraintBottom_toTopOf="@+id/linear4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear3" />
 
     <LinearLayout
         android:id="@+id/linear4"
@@ -275,8 +278,9 @@
         android:layout_marginEnd="8dp"
         android:background="@color/linearBackground"
         android:padding="@dimen/standardMargin"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
@@ -345,15 +349,15 @@
 
     <TextView
         android:id="@+id/textView9"
+        style="@style/textStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Odejmij procent od liczby"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear4"
-        android:background="@color/linearBackground"
-        style="@style/textStyle"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"/>
+        android:background="@color/linearBackground"
+        android:text="Odejmij procent od liczby"
+        app:layout_constraintBottom_toTopOf="@+id/linear5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear4" />
 
     <LinearLayout
         android:id="@+id/linear5"
@@ -363,8 +367,9 @@
         android:layout_marginEnd="8dp"
         android:background="@color/linearBackground"
         android:padding="@dimen/standardMargin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
@@ -430,7 +435,6 @@
             android:text="TextView" />
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

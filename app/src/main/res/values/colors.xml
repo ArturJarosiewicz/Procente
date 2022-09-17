@@ -10,4 +10,5 @@
     <color name="linearBackground">#FFF6BF</color>
     <color name="barColor">#F1A661</color>
     <color name="btnColor">#874C62</color>
+    <color name="activityBackground">#FF8FB1</color>
 </resources>
