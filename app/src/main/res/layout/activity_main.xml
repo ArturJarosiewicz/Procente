@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/white"
-            android:text="TextView" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 
@@ -120,7 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/standardMargin"
-            android:text="jest % z"
+            android:text="jest jakim % z"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/white"
-            android:text="TextView" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 
@@ -254,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/white"
-            android:text="TextView" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 
@@ -319,6 +319,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
+            android:hint="%"
             android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/resultbtn1"
@@ -343,7 +344,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/white"
-            android:text="TextView" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 
@@ -393,7 +394,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/standardMargin"
-            android:text="+"
+            android:text="-"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -408,6 +409,7 @@
             android:layout_weight="1"
             android:background="@color/white"
             android:ems="10"
+            android:hint="%"
             android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/resultbtn1"
@@ -432,7 +434,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/white"
-            android:text="TextView" />
+            android:hint="@string/result" />
 
     </LinearLayout>
 

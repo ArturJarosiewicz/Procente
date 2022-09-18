@@ -24,6 +24,28 @@ class MainActivity : AppCompatActivity() {
             action1()
             resetNumbers()
         }
+
+        //action2 onclick
+        binding.calculateBtn2.setOnClickListener {
+            action2()
+            resetNumbers()
+        }
+
+        binding.calculateBtn3.setOnClickListener {
+            action3()
+            resetNumbers()
+        }
+
+        binding.calculateBtn4.setOnClickListener {
+            action4()
+            resetNumbers()
+        }
+
+        binding.calculateBtn5.setOnClickListener {
+            action5()
+            resetNumbers()
+        }
+
     }
 
     private fun resetNumbers(){
@@ -43,4 +65,53 @@ class MainActivity : AppCompatActivity() {
         binding.resultTv1.text = actionResult.toString()
 
     }
+
+    private fun action2() {
+        try {
+            number1 = binding.Number3.text.toString().toFloat()
+            number2 = binding.Number4.text.toString().toFloat()
+        } catch (e: Exception) {
+            Toast.makeText(this, "wpisz dane", Toast.LENGTH_SHORT).show()
+        }
+
+        actionResult = number1 / number2 * 100
+        binding.resultTv2.text = actionResult.toString()
+    }
+
+    private fun action3() {
+        try {
+            number1 = binding.Number5.text.toString().toFloat()
+            number2 = binding.Number6.text.toString().toFloat()
+        } catch (e: Exception) {
+            Toast.makeText(this, "wpisz dane", Toast.LENGTH_SHORT).show()
+        }
+        actionResult = (number2 - number1) / number1 * 100
+        binding.resultTv3.text = actionResult.toString()
+
+    }
+
+    private fun action4() {
+        try {
+            number1 = binding.Number7.text.toString().toFloat()
+            number2 = binding.Number8.text.toString().toFloat()
+        } catch (e: Exception) {
+            Toast.makeText(this, "wpisz dane", Toast.LENGTH_SHORT).show()
+        }
+        actionResult = number1 + (number2 / 100 * number1)
+        binding.resultTv4.text = actionResult.toString()
+
+    }
+
+    private fun action5() {
+        try {
+            number1 = binding.Number9.text.toString().toFloat()
+            number2 = binding.Number10.text.toString().toFloat()
+        } catch (e: Exception) {
+            Toast.makeText(this, "wpisz dane", Toast.LENGTH_SHORT).show()
+        }
+        actionResult = number1 - (number2 / 100 * number1)
+        binding.resultTv5.text = actionResult.toString()
+
+    }
+
 }
